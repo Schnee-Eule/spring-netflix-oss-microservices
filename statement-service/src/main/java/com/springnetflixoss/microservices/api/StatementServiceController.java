@@ -16,7 +16,7 @@ import com.google.common.base.Optional;
 import com.springnetflixoss.microservices.model.Statement;
 
 @RestController
-@RequestMapping(name="/api")
+@RequestMapping(value="/api")
 public class StatementServiceController {
 
 	private List<Statement> fakeRepo;
