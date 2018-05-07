@@ -17,7 +17,7 @@ public interface CardService {
 	List<CardVO> getCards();
 	
 	@RequestMapping(value = PREFIX + "/card/{cardId}", method = RequestMethod.GET)
-	CardVO getCard(@PathVariable Long cardId);
+	CardVO getCard(@PathVariable("cardId") Long cardId);
 	
 	@RequestMapping(value = PREFIX + "/new-card", method = RequestMethod.POST, produces = MediaType.APPLICATION_JSON_VALUE, consumes = MediaType.APPLICATION_JSON_VALUE)
 	void createCard(@RequestBody CardVO newCard);
